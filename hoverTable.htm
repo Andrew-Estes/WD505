@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+
+    <style>
+            tr.table-striped {
+                background-color: #ecf6fc;
+            }
+            tr.table-row-highlight {
+                background-color: #bcd4ec;
+            }
+            td,
+            th {
+                padding: 8px;
+            }
+        </style>
+    
+</head>
+<body>
+    <h1>Stripped Text #11</h1>
+
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate aspernatur excepturi consequuntur fugiat praesentium similique magnam labore? Odit laudantium culpa tenetur velit aspernatur modi et impedit ut architecto aliquid.</th>
+                <th>Illo ab laborum consequatur fuga velit, delectus quisquam praesentium deserunt quidem voluptate possimus tenetur sapiente vel alias animi, minima aspernatur similique deleniti quas magni soluta nisi blanditiis voluptatem. Velit, perferendis.</th>
+                <th>Omnis et tempora inventore similique? Recusandae quod voluptatum sunt dignissimos earum incidunt rem veritatis repellendus voluptas, expedita in dolore vero natus? Rem accusantium animi corrupti deleniti totam ea esse unde.</th>
+                <th>Impedit in eligendi esse voluptates, doloribus assumenda vero fugit maiores veniam asperiores mollitia optio consequatur? Mollitia nulla laudantium distinctio? Reiciendis minus deleniti eveniet nostrum molestiae labore, nemo quam voluptatum neque!</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit modi reiciendis hic veritatis explicabo esse ea corporis mollitia? Dolorum inventore aliquid iusto placeat repudiandae? Excepturi voluptates labore dignissimos sed.</td>
+                <td>Excepturi ipsum dolorum veniam eum totam in molestias beatae asperiores accusamus, earum ipsa amet quod, quae at tenetur architecto maiores nisi possimus corrupti non laboriosam pariatur rerum? Commodi, modi dolorum.</td>
+                <td>Eius quas unde sint nemo, maiores fugiat, aperiam expedita voluptatem qui blanditiis velit quos vel voluptatibus recusandae ut similique veniam aliquid? Tempora porro magnam reprehenderit laudantium earum cupiditate, odit temporibus!</td>
+                <td>Fugit, sit vel ea iusto provident amet neque, praesentium, odio ipsum earum quas! Explicabo labore facilis soluta ullam suscipit nostrum fuga laudantium praesentium quas corrupti, magnam sed dignissimos eum. Fuga.</td>
+            </tr>
+            <tr>
+                <td>Nemo aliquid a ad vel repellat voluptate vitae dolor commodi quae odio necessitatibus architecto mollitia, facere repellendus corporis quibusdam alias expedita ea tempora enim vero molestias ut sapiente. Quae, amet!</td>
+                <td>Architecto, id vitae repudiandae, aut iusto saepe alias ex reprehenderit quos dicta tempora. Voluptates possimus dolore nihil id quo, suscipit unde vero recusandae, voluptatem adipisci quidem hic provident animi culpa.</td>
+                <td>Quibusdam voluptate enim tempore consequatur doloribus, ipsam ipsa ut voluptatum repudiandae quo provident distinctio nam exercitationem maiores nostrum? Accusamus vel dolores quas exercitationem voluptatem voluptatum quasi provident est quos odio.</td>
+                <td>Nihil, quisquam blanditiis impedit quam, inventore, eum distinctio eius accusantium culpa voluptas cum. In voluptates quo quas. Deleniti nobis veniam ut, qui, perspiciatis unde aliquam illum possimus, minus ducimus eum.</td>
+            </tr>
+            <tr>
+                <td>Suscipit necessitatibus quas quaerat? Reiciendis aperiam quod nulla, provident cumque repellendus a ad doloremque delectus ab maiores in unde dignissimos, est repellat asperiores fugit sapiente quis suscipit impedit incidunt beatae.</td>
+                <td>Non molestiae aspernatur quidem asperiores odio ducimus eligendi vitae culpa autem possimus tenetur provident tempore vel nostrum dolores ratione maxime explicabo odit laudantium fuga quae atque, sit cupiditate totam! Distinctio.</td>
+                <td>Illo dolor laborum doloribus saepe eligendi aspernatur sit, maiores, recusandae, minima quia quaerat eius aliquam? Natus alias, laudantium rerum ipsa velit adipisci veritatis quibusdam voluptate ipsum excepturi? Quos, reiciendis voluptates!</td>
+                <td>Facere in cupiditate eaque eius harum temporibus, quod corrupti corporis commodi tempora. Enim amet repellat soluta! Minima harum omnis adipisci sint a impedit hic consectetur! Non reprehenderit beatae mollitia saepe!</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+ 
+    <script>
+            $(function () { // ready function 
+                $("table.striped tr:odd")
+                    .addClass("table-striped");
+                $("table.striped tr")
+                    .on('mouseover', function () {
+                        $(this).addClass("table-row-highlight");
+                    })
+                    .on('mouseout', function () {
+                        $(this).removeClass("table-row-highlight");
+                    });
+            }); // end ready function
+        </script>
+</body>
+</html>

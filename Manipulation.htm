@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    </script>
+    <style>
+    .blue {
+        background-color: #33FFFF;
+    }
+    </style>
+</head>
+<body>
+    <h1>Event #9</h1>
+ 
+    <ui id="hover-list">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestiae nostrum, quo corporis dolorem dicta mollitia fuga ipsum dolor veritatis, quibusdam quia, quisquam a? Inventore voluptatibus dolores dolorum eveniet non.</li>
+    </ui>
+    <ul>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, debitis illo, incidunt eaque facilis fuga sed autem a sunt eum accusantium rem, possimus sit quos eius inventore cumque maxime perferendis?</li>
+    </ul>
+    <script>
+        $('#hover-list li')
+        .on('mouseenter',
+        function(){
+            $(this).addClass('blue');
+        })
+        .on('mouseout',
+        function(){
+            $(this).removeClass('blue');
+        });
+        
+    </script>
+</body>
+</html>

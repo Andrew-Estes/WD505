@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>InnerFade exercise</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css" />
+
+    <script src="../js/innerfade.js"></script>
+    <script>
+        $(function () { // ready function 
+            console.log('jQuery is active.'); // test
+
+            $('#innerFadeElement').innerfade({
+                speed: 2000,
+                animationtype: 'fade', // or slide
+                timeout: 4000,
+                type: 'sequence',
+                containerheight: '250px',
+                runningclass: 'innerFadeClass'
+            });
+
+        }); // end ready function
+    </script>
+    <style>
+        .innerFadeClass {}
+
+        #innerFadeElement img {
+            max-height: 250px;
+        }
+</style>
+</head>
+
+<body>
+    <div id="innerFadeElement">
+        <div><img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" /></div>
+        <div><img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" /></div>
+        <div><img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" /></div>
+        <div><img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" /></div>
+        <div><img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" /></div>
+    </div>
+</body>
+
+</html>

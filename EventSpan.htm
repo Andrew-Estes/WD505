@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    </script>
+    <style>
+    span.bold {font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1>Event #8</h1>
+    <button id='btn_bold'>Bold the spans.</button>
+    <p><span>jQuery</span> spanLorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit sint mollitia, accusantium cupiditate distinctio odio officiis facilis voluptates. Voluptatibus accusamus commodi quidem quibusdam, obcaecati nam id praesentium veniam deserunt maiores a rem facilis magnam, velit labore distinctio voluptas totam. Nihil ratione ut consequatur enim eius quo dolores deleniti quibusdam in, voluptatum doloribus voluptatem laboriosam iste modi mollitia neque delectus! Vel fugit aspernatur consequatur nisi libero! <span>jQuery</span>returns the query object itself, allowing you to 'chain' upon it.</p>
+    <!--
+    <a href="http://bing.com">Click me</a>
+    <br/>
+    <a href="http://google.com">No, click me</a>
+    <br/>
+    <a href="http://cnn.com">No, me, me, me!</a>
+    <br/>
+    -->
+    <script>
+        $('#btn_bold').on('click',function(){
+            $('p span').addClass('bold');
+        });
+        
+    </script>
+</body>
+</html>

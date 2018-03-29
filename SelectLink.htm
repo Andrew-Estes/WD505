@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+
+</head>
+<body>
+        <h1>Select Alert #5</h1>
+     <div id="div-links">   
+        <a href="http://bing.com">Click me</a>
+        <br/>
+        <a href="http://google.com">No, click me</a>
+        <br/>
+    </div>
+        <a href="http://cnn.com">No, me, me, me!</a>
+        <br/>
+        
+        <script>
+            //debugger
+            $('#div-links a').on('click',function(){alert("Nooooo. Don\'t leave!") })
+        </script>
+</body>
+</html>
