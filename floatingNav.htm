@@ -28,8 +28,8 @@
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
-    $(function() { // ready function 
-        console.log('jQuery is active.'); // test
+    // $(function() { // ready function 
+    //     console.log('jQuery is active.'); // test
         $(window).scroll(function() {
             $('#simpleMenu')
                 .stop()
@@ -38,11 +38,12 @@
                 }, 'slow', 'easeOutBack');
         });
 
-    }); // end ready function
+    // }); // end ready function
     </script>
 </head>
 
 <body>
+    <h1>Floating Navigation</h1>
     <nav id='simpleMenu'>
         <ul>
             <li><a href="#">Home</a></li>
